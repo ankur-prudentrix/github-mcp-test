@@ -10,6 +10,7 @@ document.getElementById("countBtn").addEventListener("click", () => {
   count++;
   countEl.textContent = count;
   message.textContent = `You clicked ${count} time${count === 1 ? "" : "s"}.`;
+  console.log("Created Login Button");
 });
 
 document.getElementById("themeBtn").addEventListener("click", () => {

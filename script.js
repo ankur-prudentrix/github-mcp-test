@@ -18,6 +18,17 @@ document.getElementById("themeBtn").addEventListener("click", () => {
   message.textContent = isDark ? "Dark mode on." : "Light mode on.";
 });
 
+let loggedIn = false;
+const loginBtn = document.getElementById("loginBtn");
+
+loginBtn.addEventListener("click", () => {
+  loggedIn = !loggedIn;
+  loginBtn.textContent = loggedIn ? "Logout" : "Login";
+  message.textContent = loggedIn
+    ? "You are logged in (demo only)."
+    : "You have logged out.";
+});
+
 document.getElementById("resetBtn").addEventListener("click", () => {
   count = 0;
   countEl.textContent = count;

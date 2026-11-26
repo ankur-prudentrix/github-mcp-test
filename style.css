@@ -73,3 +73,11 @@ button.secondary {
 button.secondary:hover {
   background: #4b5563;
 }
+
+button.login {
+  background: #16a34a;
+}
+
+button.login:hover {
+  background: #15803d;
+}
